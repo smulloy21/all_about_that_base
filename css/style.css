@@ -1,3 +1,20 @@
+html {
+  min-height: 100%;
+}
+body {
+  background: url('img/binary.jpg') top center no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+.container {
+  background-color: rgba(0,0,0,.8);
+  margin: 5rem;
+  text-align: center;
+  border-radius: 20px;
+}
+body, .container, h1, input, button, form, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
 #result {
   display: none;
 }
@@ -8,4 +25,8 @@
 
 #baseError {
   display: none;
+}
+
+.green {
+  color: #159411;
 }

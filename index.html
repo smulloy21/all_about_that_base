@@ -2,40 +2,33 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>All about that Base</title>
+    <title>Base Converter</title>
   </head>
   <body>
     <div class="container well">
 
-      <h1>All about that Base</h1>
-      <form class="form-horizontal" id="changeBase">
+      <h1>All about that <span class="green">Base</span></h1>
+      <form id="changeBase">
         <div class="form-group">
-          <label for="decimal" class="col-lg-2 control-label sg-only"></label>
-          <div class="col-lg-10">
-            <input type="text" id="decimal" placeholder="number">
-          </div>
-          <label for="base" class="col-lg-2 control-label sg-only"></label>
-          <div class="col-lg-10">
-            <input type="text" id="base" placeholder="base to convert to">
-          </div>
+          <input type="text" id="decimal" placeholder="number"><br>
+          <input type="text" id="base" placeholder="base (up to 64)">
         </div>
-          <button type="submit" class="btn btn-warning">convert it</button>
+          <button type="submit" class="btn btn-default">convert</button>
       </form>
-      <div class='well' id="result">
-        <p>
-          <span class="decimal"></span> in base <span class="base"></span> is: <span class="result"></span>
-        </p>
+      <div id="result">
+        <h3>
+          <span class="decimal green"></span> in Base <span class="base green"></span> is: <span class="result green"></span>
+        </h3>
       </div>
-      <div class="well" id="decimalError">
-        <h3>Please enter integers only as a number.</h3>
+      <div id="decimalError">
+        <h3>Please enter a number and a base.</h3>
       </div>
-      <div class="well" id="baseError">
-        <h3>Base should be up to 64.</h3>
+      <div id="baseError">
+        <h3>This app currently goes up to Base 64.</h3>
       </div>
     </div>
   </body>
