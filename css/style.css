@@ -2,6 +2,10 @@
   display: none;
 }
 
-#error {
+#decimalError {
+  display: none;
+}
+
+#baseError {
   display: none;
 }

@@ -13,21 +13,29 @@
     <div class="container well">
 
       <h1>All about that Base</h1>
-      <form id="wordCount">
+      <form class="form-horizontal" id="changeBase">
         <div class="form-group">
-          <input type="text" id="text" placeholder="type some digits">
-          <input type="select" id="base">
+          <label for="decimal" class="col-lg-2 control-label sg-only"></label>
+          <div class="col-lg-10">
+            <input type="text" id="decimal" placeholder="number">
+          </div>
+          <label for="base" class="col-lg-2 control-label sg-only"></label>
+          <div class="col-lg-10">
+            <input type="text" id="base" placeholder="base to convert to">
+          </div>
         </div>
-          <button type="submit" class="btn btn-warning">count it</button>
+          <button type="submit" class="btn btn-warning">convert it</button>
       </form>
       <div class='well' id="result">
-        <h3 class="response">Result...</h3>
-        <ul id="word" class="fa fa-ul">
-
-        </ul>
+        <p>
+          <span class="decimal"></span> in base <span class="base"></span> is: <span class="result"></span>
+        </p>
       </div>
-      <div  class="well" id="error">
-        <h3>just in case..</h3>
+      <div class="well" id="decimalError">
+        <h3>Please enter integers only as a number.</h3>
+      </div>
+      <div class="well" id="baseError">
+        <h3>Base should be up to 64.</h3>
       </div>
     </div>
   </body>
