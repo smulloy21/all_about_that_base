@@ -1,6 +1,6 @@
 # _All about that Base_
 
-##### _Base Converter, 8/10/15_
+##### _Base Converter, 9/10/15_
 
 #### By _**Toma Apostolov & Shannon Mulloy**_
 
